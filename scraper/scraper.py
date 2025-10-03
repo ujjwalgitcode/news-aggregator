@@ -17,7 +17,7 @@ sys.path.insert(0, str(project_root))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'newsproject.settings')
 
 import django
-#-django.setup()
+django.setup()
 
 from newsapp.models import NewsArticle
 from playwright.sync_api import sync_playwright
