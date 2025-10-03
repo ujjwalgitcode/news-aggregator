@@ -28,7 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # DEBUG = os.environ.get("DEBUG", "False") == "True"
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+
+import os
+ALLOWED_HOSTS = ["*", os.environ.get("RAILWAY_STATIC_URL", "")]
 
 
 # Application definition
