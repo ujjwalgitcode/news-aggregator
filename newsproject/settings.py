@@ -126,7 +126,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key")
+SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-jl75z*-b)_py3%m)&o^7y(8v6_z^egcl8xos^u$hpb)1&x3h3)")
 
 STATIC_URL = '/static/'
 
