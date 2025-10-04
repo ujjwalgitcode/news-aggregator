@@ -1,6 +1,2 @@
-from django.apps import AppConfig
-
-
-class NewsappConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'newsapp'
+web: gunicorn newsproject.wsgi:application --bind 0.0.0.0:$PORT
+worker: python scraper/scraper.py
